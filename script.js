@@ -5,5 +5,11 @@ function myFunc() {
   let d = parseFloat(a) * ( Math.E ** (parseFloat(b) * parseFloat(c)));
   d = Math.round(d);
 
+  let e = prompt("Enter the value for the region/location of the monster: ");
+  let f = prompt("Enter the value for the name of the monster: ");
+  let g = concat(e, " ", f);
+  g = toUpperCase(g);
+
+  document.getElementById('result').innerhtml = "After " + c + " hours, the population of " + g + " has increased to " + d + "!";
 }
   
