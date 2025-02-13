@@ -1,15 +1,15 @@
 function myFunc() {
-  let a = prompt("Enter value for the initial population: ");
-  let b = prompt("Enter value for the rate of growth: ");
-  let c = prompt("Enter value for the time elapsed in hours: ");
-  let d = parseFloat(a) * Math.pow(Math.E, (parseFloat(b) * parseFloat(c)));
-  d = Math.round(d);
+  let initialPopulation = prompt("Enter value for the initial population: ");
+  let rateOfGrowth = prompt("Enter value for the rate of growth: ");
+  let elapsedHours = prompt("Enter value for the time elapsed in hours: ");
+  let calculations = parseFloat(a) * Math.pow(Math.E, (parseFloat(b) * parseFloat(c)));
+  calculations = Math.round(calculations);
 
-  let e = prompt("Enter the region/location of the monster: ");
-  let f = prompt("Enter the name of the monster: ");
-  let g = e.concat(" ", f);
-  g = toUpperCase(g);
+  let locationOfMonster = prompt("Enter the region/location of the monster: ");
+  let nameOfMonster = prompt("Enter the name of the monster: ");
+  let mergedString = concat(locationOfMonster, " ", nameOfMonster);
+  mergedString = toUpperCase(g);
 
-  document.getElementById('result').innerhtml = "After " + c + " hours, the population of " + g + " has increased to " + d + "!";
+  document.getElementById('result').innerHTML = "After " + elapsedHours + " hours, the population of " + mergedString + " has increased to " + calculations + "!";
 }
   
