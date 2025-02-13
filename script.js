@@ -10,6 +10,6 @@ function myFunc() {
   let mergedString = concat(locationOfMonster, " ", nameOfMonster);
   mergedString = toUpperCase(mergedString);
 
-  document.getElementById('result').innerHTML = "After " + elapsedHours + " hours, the population of " + mergedString + " has increased to " + calculations + "!";
+  document.getElementById("result").innerHTML = "After " + elapsedHours + " hours, the population of " + mergedString + " has increased to " + calculations + "!";
 }
   
