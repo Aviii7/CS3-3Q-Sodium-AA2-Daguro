@@ -7,7 +7,7 @@ function myFunc() {
 
   let locationOfMonster = prompt("Enter the region/location of the monster: ");
   let nameOfMonster = prompt("Enter the name of the monster: ");
-  let mergedString = concat(locationOfMonster, " ", nameOfMonster);
+  let mergedString = locationOfMonster.concat(" ", nameOfMonster);
   mergedString = mergedString.toUpperCase();
 
   document.getElementById('result').innerHTML = 'After ' + elapsedHours + ' hours, the population of ' + mergedString + ' has increased to ' + calculations + '!';
